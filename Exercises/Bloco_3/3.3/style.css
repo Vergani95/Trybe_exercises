@@ -25,7 +25,7 @@ body{
     line-height: 42px;
     font-weight: 600;
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .testtimonial-name{
@@ -72,3 +72,18 @@ body{
     padding-top: 20px; 
 }
    
+.market{
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.market-text{
+    max-width: 60%;
+    margin: auto;
+
+}
+
+.market-text p {
+    margin-bottom: 30px;
+
+}
