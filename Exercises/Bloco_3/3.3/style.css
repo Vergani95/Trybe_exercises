@@ -1,6 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
     font-family: Montserrat, sans-serif;
   }
+
+  p, li {
+      font-size: 16px;
+      color: #475550;
+
+    }
 
   .paragraph_geral {
     color: #475550;
@@ -14,6 +25,7 @@ body{
     line-height: 42px;
     font-weight: 600;
     font-size: 28px;
+    margin-bottom: 30px;
   }
 
   .testtimonial-name{
@@ -34,3 +46,29 @@ body{
     text-decoration: none;
   
   }
+
+  .header {
+    background-image: url('images/smiling-image.jpeg');
+    background-size: cover;
+    padding: 60px 30px 40px 30px;
+    /* padding: 500px 30px; */
+    background-position: 50% 25%;
+
+}
+
+.header-content {
+    max-width: 60%;
+    margin-left: 75px;
+
+}
+
+.header-text{
+    padding-top: 20px; 
+    max-width: 70%;
+    text-align: left;
+}
+
+.header-text p {
+    padding-top: 20px; 
+}
+   
