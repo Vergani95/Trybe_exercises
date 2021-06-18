@@ -1,0 +1,36 @@
+body{
+    font-family: Montserrat, sans-serif;
+  }
+
+  .paragraph_geral {
+    color: #475550;
+  }
+
+  .trybe_green {
+    color:#11a36a
+  }
+
+  .section_title{
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .testtimonial-name{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .picture {
+    border-radius: 50% ;
+  }
+
+  .button{
+    background-color: #11a36a;
+    border-radius: 4px;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+  
+  }
