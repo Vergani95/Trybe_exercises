@@ -87,3 +87,23 @@ body{
     margin-bottom: 30px;
 
 }
+
+
+.student-testimonial-all {
+    padding: 30px 50px 90px 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.student-testimonial{
+    width: 20%;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.student-testimonial p {
+    margin: 10px;
+    
+}
