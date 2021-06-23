@@ -1,6 +1,7 @@
 let num1 = 5;
 let num2 = 10;
 let num3 = 15;
+let idadeMinimaParaDirigir = 18;
 
 // Soma
 let soma = num1 + num2;
@@ -19,7 +20,7 @@ let comparacao = num1 > num2;
 
 
 // Condicional
-if(num1 > num2) {
+if(2 > 5) {
     console.log("num1 wins");
 } else {
     console.log("num2 wins");
