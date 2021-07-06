@@ -49,3 +49,8 @@ ul {
   font-size:20px;
   color: #777;
 }
+
+.mudaCor {
+  background-color: red;
+  color:aqua;
+}

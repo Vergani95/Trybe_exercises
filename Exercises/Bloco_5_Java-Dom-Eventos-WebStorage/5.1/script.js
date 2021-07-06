@@ -3,7 +3,7 @@ btnHoliday.addEventListener('click', function() {
   const holidays = document.querySelectorAll('.holiday');
   for (let index = 0; index < holidays.length; index += 1) {
     if (holidays[index].style.backgroundColor === 'white') {
-      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+      holidays[index].style.backgroundColor = 'lightgreen';
     } else {
       holidays[index].style.backgroundColor = 'white';
     }
@@ -66,3 +66,7 @@ for (let index = 0; index < daysList.length; index += 1) {
 function alteraCor(elementos, cor){
   document.querySelector(elementos).style.backgroundColor = cor;
 };
+
+function mudaBotao(){
+  document.getElementById('btn-friday').classList.add('mudaCor');
+}
