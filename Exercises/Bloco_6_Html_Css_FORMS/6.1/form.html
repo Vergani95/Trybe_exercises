@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participação formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="speaker-form-header">
+    <h1>Participação no Evento</h1>
+    <p><em>Quer Participar do nosso Evento??? Então preencha o formulário abaixo!!</em></p>
+  </header>
+  <main class="speaker-form">
+    <form action="" method="GET">
+      <fieldset class="legacy-form-row">
+        <legend>Dados pessoais</legend>
+
+        <label for="full-name">Nome</label>
+        <input type="text" id="full-name" name="name" placeholder="Digite seu nome...">
+<br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+      </fieldset>
+
+      <fieldset class="legacy-form-row">
+        <legend>Tipo de Palestra</legend>
+        <label for="palco">Palco principal</label>
+        <input type="radio" name="tipo-palestra" id="palco" value="palco">
+
+        <label for="workshop">Workshop</label>
+        <input type="radio" name="tipo-palestra" id="workshop" value="ws">
+      </fieldset>
+
+      <fieldset class="line-content">
+        <legend>Selecione seu tamanho de camiseta</legend>
+        <label for="t-shirt">Camisete</label>
+        <select name="t-shirt" id="t-shirt">
+          <option value="xp">PP</option>
+          <option value="p">P</option>
+          <option value="m" selected>M</option>
+          <option value="g">G</option>
+          <option value="xg">GG</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="line-content">
+        <legend></legend>
+        <label for="resume" class="textarea-label">Resumo</label>
+        <textarea name="resume" id="resume" cols="30" rows="5"
+          placeholder="Digite um resumo da sua palestra aqui..."></textarea>
+      </fieldset>
+
+      <fieldset class="line-content">
+        <label for="disponibilidade">
+          <input type="checkbox" name="disponibilidade" id="disponibilidade">
+          <span>Tenho disponibilidade de participar do evento nessa data!</span>
+        </label>
+
+      </fieldset>
+
+
+      <button type="submit" id="enviar">Enviar</button>
+      <button type="reset" id="limpar">Limpar</button>
+    </form>
+
+  </main>
+</body>
+
+</html>
