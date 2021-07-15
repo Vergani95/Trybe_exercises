@@ -17,38 +17,73 @@
   <fieldset>
 
     <div class="line">
-      <label for="name">Nome</label>
+      <label for="name">Nome:</label>
       <input type="text" name="name" id="name" placeholder="Digite seu Nome ...." maxlength="40" required>
     </div>
 
     <div class="line"></div>
-    <label for="email">E-mail</label>
+    <label for="email">E-mail:</label>
     <input type="email" name="email" id="email" placeholder="Digite seu email" maxlength="50" required>
     </div>
 
     <div class="line"></div>
-    <label for="cpf">Informe seu CPF</label>
+    <label for="cpf">Informe seu CPF:</label>
     <input type="text" name="cpf" id="cpf" maxlength="11" placeholder=" CPF sem pontuação...." required>
     </div>
 
     <div class="line"></div>
-    <label for="adress">Informe seu Endereço</label>
+    <label for="adress">Informe seu Endereço:</label>
     <input type="text" name="adress" id="adress" maxlength="200" placeholder="Rua: Sempre verde...." required>
     </div>
 
     <div class="line"></div>
-    <label for="city">Inrme sua cidade</label>
+    <label for="city">Informe sua cidade:</label>
     <input type="text" name="city" id="city" maxlength="28" placeholder="Digite sua cidade..." required>
     </div>
 
-    <div class="line-content">
+    <div class="line">
       <label for="state">Estado: </label>
       <select name="state" id="state"  required>
-        <option disabled selected value>Selecione seu estado</option>
+        <option disabled selected value>Selecione seu estado:</option>
       </select>
     </div>
 
+    <div class="line"> 
+      <legend>Tipo de moradia:</legend>
+      <input type="radio" name="moradia" id="moradia ">
+      <label for="moradia">Casa</label>
+      <br>
+      <input type="radio" name="moradia" id="moradia">
+      <label for="moradia"> Apartamento:</label>
+    </div>
   </fieldset>
+
+<fieldset>
+  <div class="line"> 
+    <label for="resume" >Resumo:</label>
+    <textarea name="resume" id="resume" cols="50" rows="20" placeholder="Resumo do seu curriculum..." maxlength="1000"></textarea>
+  </div>
+
+<div class="line">
+  <label for="cargo">Cargo:</label>
+  <input type="text" name="cargo" id="cargo" placeholder="Digite o cargo pretendido" maxlength="40">
+</div>
+
+<div class="line">
+  <label for="descricao">Descrição do cargo:</label>
+  <input type="text" name="descricao" id="descricao" placeholder="Descreva aqui o seu cargo" maxlength="500">
+</div>
+
+<div class="line">
+  <label for="date">Data de inicio:</label>
+  <input type="date" name="date" id="date">
+</div>
+
+
+
+</fieldset>
+
+
 
 </body>
 
