@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <title>Cadastro de curriculum</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Formulário para cadastro de curriculum</h1>
+  </header>
+  <fieldset>
+
+    <div class="line">
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" placeholder="Digite seu Nome ...." maxlength="40" required>
+    </div>
+
+    <div class="line"></div>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="Digite seu email" maxlength="50" required>
+    </div>
+
+    <div class="line"></div>
+    <label for="cpf">Informe seu CPF</label>
+    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder=" CPF sem pontuação...." required>
+    </div>
+
+    <div class="line"></div>
+    <label for="adress">Informe seu Endereço</label>
+    <input type="text" name="adress" id="adress" maxlength="200" placeholder="Rua: Sempre verde...." required>
+    </div>
+
+    <div class="line"></div>
+    <label for="city">Inrme sua cidade</label>
+    <input type="text" name="city" id="city" maxlength="28" placeholder="Digite sua cidade..." required>
+    </div>
+
+    <div class="line-content">
+      <label for="state">Estado: </label>
+      <select name="state" id="state"  required>
+        <option disabled selected value>Selecione seu estado</option>
+      </select>
+    </div>
+
+  </fieldset>
+
+</body>
+
+</html>
