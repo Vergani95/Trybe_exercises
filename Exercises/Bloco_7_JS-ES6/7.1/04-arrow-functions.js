@@ -1,10 +1,10 @@
-function boasVindas(nome){
-    return 'Seja bem vinda(o), ' + nome;
-}
+// function boasVindas(nome){
+//     return 'Seja bem vinda(o), ' + nome;
+// }
 
-// const boasVindas = nome => 'Seja bem vinda(o), ' + nome;
+let boasVindas = nome => 'Seja bem vinda(o), ' + nome;
 
-console.log(boasVindas());
+console.log(boasVindas('Atanes'));
 
 const habilitado = (nome, idade) => {
     let retorno;
@@ -17,4 +17,19 @@ const habilitado = (nome, idade) => {
     return retorno;
 }
 
-console.log(habilitado('Adriano', 17));
+console.log(habilitado('Adriano', 21));
+
+
+function boasVindas(){
+    return 'Seja muito bem vindo ao nosso site!';
+}
+
+const boasVindas = () => 'Seja muito bem vindo ao nosso site!';
+
+
+
+
+
+
+
+// const boasVindas = nome => 'Seja bem vinda(o), ' + nome;

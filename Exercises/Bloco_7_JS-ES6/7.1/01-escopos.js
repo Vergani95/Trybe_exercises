@@ -29,17 +29,20 @@ function scopeSample(assing) { // Inicio escopo de função
 // }
 
 // console.log(retornaMultiplicacao(valorEntrada));
+// let num = null;
+// num = 12;
+// console.log('Número:', num);
 
+let valorEntrada = 15;
+let valorMultiplicacao;
 
-// let valorEntrada = 15;
+function geraValor(valor){
+    valorMultiplicacao = Math.random() * 3;
+}
 
-// function geraValor(valor){
-//     let valorMultiplicacao = Math.random() * 3;
-// }
+geraValor(valorEntrada);
 
-// geraValor(valorEntrada);
-
-// console.log(valorEntrada * valorMultiplicacao);
+console.log(valorEntrada * valorMultiplicacao);
 
 
 
