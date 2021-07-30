@@ -16,13 +16,17 @@
 
 const pessoas = [
     {nome: 'Robert', sobreNome: 'De Niro', dirige: true },
-    {nome: 'Michelle', sobreNome: 'Pfeiffer', dirige: false },
+    {nome: 'Michelle', sobreNome: 'Pfeiffer', dirige: true },
     {nome: 'Will', sobreNome: 'Smith', dirige: true },
-    {nome: 'Mariah', sobreNome: 'Carey', dirige: false },
+    {nome: 'Mariah', sobreNome: 'Carey', dirige: true },
     {nome: 'Lady', sobreNome: 'Gaga', dirige: true },
     {nome: 'Justin', sobreNome: 'Bieber', dirige: false },
 ]
 
+
+const pessoaQueNaoSabeDirigir = pessoas.find((pessoa)=>pessoa.dirige === false)
+
+console.log(pessoaQueNaoSabeDirigir);
 // const temPessoaQueNaoDirige = (pessoas) => {
 //     for(pessoa of pessoas){
 //         if(pessoa.dirige !== true){
@@ -34,8 +38,10 @@ const pessoas = [
 // }
 
 
-// Usando o some
+// // Usando o some
+// const temPessoaQueNaoDirige = pessoas.some((value)=> value.dirige !== true);
 
+// console.log(temPessoaQueNaoDirige)
 
 // Verificar se todas as pessoas da listagem dirigem
 
@@ -51,4 +57,7 @@ const pessoas = [
 // console.log(todasPessoasDirigem(pessoas));
 
 // Usando o every
+
+const todasPessoasDirigem = pessoas.every((pessoa) =>pessoa.dirige === true);
+console.log(todasPessoasDirigem);
 
