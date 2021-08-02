@@ -1,8 +1,8 @@
 // Links uteis:
-// HoF FILTER
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-// O método filter() cria um novo array com todos os elementos que passaram no teste 
-// implementado pela função fornecida.
+// HoF MAP
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+// O método map() invoca a função callback passada por argumento para cada elemento do Array 
+// e devolve um novo Array como resultado.
 
 // Operações com String em Javascript
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String
@@ -17,23 +17,24 @@ let cervejas = [
     { codigo: 451, fabricante: 'Lupulus', descricao: 'Lupulus Blanche 330ML', valor: 29.99, estoque: 0 },
 ]
 
-// Mostrar todas as cervejas com valor abaixo de R$ 25.00
+// Apresentar a listagem das cervejas com sua descrição e valor.
+// Saida esperada: Cerveja {descricaoCerveja} com o valor de R$ {valorCerveja}
+// let listagem = [];
+// for(cerveja of cervejas){
+//     listagem.push(`Cerveja ${cerveja.descricao} com o valor de R$ ${cerveja.valor}`);
+// }
+// console.log(listagem);
 
-// Mostrar todas as cervejas com estoque baixo de 100 unidades
-let cervejasComBaixoEstoque = cervejas.filter((cerveja)=>{
-    return cerveja.estoque < 100;
-});
+// let listaCervejas = cervejas.map((cerveja)=> `Cerveja ${cerveja.descricao} com o valor de R$ ${cerveja.valor}`);
 
-console.log(cervejasComBaixoEstoque);
+// console.log(listaCervejas);
 
-// Mostrar todas as cervejas que começam com a letra L
 
-let cervejasComLetraL = cervejas.filter((cerveja) => cerveja.descricao.startsWith('L') ); //ou cerveja.descricao[0] === 'L')
+// Aplicar um aumento de 15% no valor de todas as cervejas da nossa listagem
 
-console.log(cervejasComLetraL)
+cervejas = cervejas.map((cerveja)=>{
+    cerveja.valor *= 1.15;
+    return cerveja;
+})
 
-// Mostrar todas as cervejas que contenham a palavra IPA na sua descricao
-
-let cervejasIpa = cervejas.filter((cerveja) => cerveja.descricao.includes('IPA'));
-console.log(cervejasIpa);
-
+console.log(cervejas);

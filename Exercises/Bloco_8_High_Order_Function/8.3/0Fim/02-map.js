@@ -1,12 +1,3 @@
-// Links uteis:
-// HoF MAP
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-// O método map() invoca a função callback passada por argumento para cada elemento do Array 
-// e devolve um novo Array como resultado.
-
-// Operações com String em Javascript
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String
-
 let cervejas = [
     { codigo: 123, fabricante: 'Urquell', descricao: 'Pilsner Urquell 500ML', valor: 20, estoque: 200 },
     { codigo: 176, fabricante: 'Schornstein', descricao: 'Schornstein Imperial 500ML', valor: 35.99, estoque: 150 },
@@ -17,13 +8,21 @@ let cervejas = [
     { codigo: 451, fabricante: 'Lupulus', descricao: 'Lupulus Blanche 330ML', valor: 29.99, estoque: 0 },
 ]
 
-// Apresentar a listagem das cervejas com sua descrição e valor.
-// Saida esperada: Cerveja {descricaoCerveja} com o valor de R$ {valorCerveja}
+let aumentos = [
+    { fabricante: 'Urquell', aumentoPercentual: 1.10 },
+    { fabricante: 'Schornstein', aumentoPercentual: 1.25 },
+    { fabricante: 'Leuven', aumentoPercentual: 1.12 },
+    { fabricante: 'Maniacs', aumentoPercentual: 1.05 },
+    { fabricante: 'Lupulus', aumentoPercentual: 1.10 },
+]
 
-let listaCervejas = cervejas.map((cerveja)=> {
-    return `Cerveja ${cerveja.descricao} com o valor ${cerveja.valor}`
+// Aplicar o aumento especificado para cada fabricante de cerveja
+
+let novosValoresParaCervejas = cervejas.map((cerveja)=>{
+    const fabricante = aumentos.find((aumento)=> aumento.fabricante === cerveja.fabricante);
+    cerveja.valor *= fabricante.aumentoPercentual;
+    return cerveja;
+
 });
 
-console.log(listaCervejas);
-// Aplicar um aumento de 15% no valor de todas as cervejas da nossa listagem
-
+console.log(novosValoresParaCervejas);
