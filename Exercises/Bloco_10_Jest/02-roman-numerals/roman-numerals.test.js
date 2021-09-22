@@ -17,6 +17,6 @@ describe('Requisito 1', () => {
     })
     
     test('Converte número 7 para romanos', () => {
-        expect(convertToRoman(7)).toBe('VII');
+        expect(convertToRoman(565)).toBe('DLXV');
     })
 })
