@@ -6,3 +6,16 @@ body {
   display: flex;
   justify-content: center;
 }
+
+ul {
+  list-style: none;
+}
+
+.color-display {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+  display: inline-block;
+  background-color: red;
+  border-radius: 4px;
+}
