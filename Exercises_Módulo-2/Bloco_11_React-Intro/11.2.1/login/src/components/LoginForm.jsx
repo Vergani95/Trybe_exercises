@@ -5,6 +5,7 @@ constructor() {
   super()
 
   this.state = {
+    name: '',
     email:'',
     password:''
   };
@@ -31,8 +32,9 @@ handleChange(event) {
 }
 
 handleSubmit = () => {
+  
   alert('Login efetuado com sucesso bo email' + email);
-  const { email, password } = this.state
+  const { email } = this.state
 }
 
   render() {
